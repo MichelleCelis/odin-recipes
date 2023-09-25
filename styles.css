@@ -1,19 +1,133 @@
-.landing {
-    background-color: #F4D8B6;
+@import url('https://fonts.googleapis.com/css2?family=Skranji&display=swap');
+
+body {
+    margin: 0;
 }
 
-.recipes {
+.landing, .sub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #F4D8B6;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    border: 200%;
+}
+
+/*.landing .title{
+    font-family: 'Skranji', cursive;
+    font-size: 400%;
+    color: #5D4A3c;
+    letter-spacing:1.5em;
+    align-items: center;
+    margin: 200px;
+    position: absolute;
+    top: -0.5em;
+}*/
+
+.landing .title{
+    font-family: 'Skranji', cursive;
+    width: 100%;
+    letter-spacing: 0.5em;
+    position: relative;
+    top: -10%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #5D4A3c;
+    font-size: 75px;
+    margin-top: 90px;
+}
+
+.landing .logo{
+    position: absolute;
+    height: auto;
+    max-width: 100%;
+    transform: scale(0.25);
+    top: -19em;
+    left: -3em;
+}
+
+.recipes, .contact {
     background-color: #7DA8AE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    border: 200%;
+    padding: 6em 0em 6em;
 }
 
-.sub{
+.recipes .title {
+    font-family: 'Skranji', cursive;
+    letter-spacing:0.5em;
+    width: 100%;
+    position: absolute;
+    top: 22%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #F4D8B6;
+    font-size: 40px;
+    margin-top: -130px;
+}
+
+.sub .title {
+    font-family: 'Skranji', cursive;
+    letter-spacing:0.5em;
+    width: 100%;
+    position: absolute;
+    top: 22%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #5D4A3c;
+    font-size: 35px;
+    margin-top: -100px;
+    white-space: nowrap;
+}
+
+.contact .title {
+    font-family: 'Skranji', cursive;
+    letter-spacing:0.5em;
+    width: 100%;
+    position: absolute;
+    top: 22%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #F4D8B6;
+    font-size: 35px;
+    margin-top: -140px;
+    white-space: nowrap;
+}
+
+/*.footer{
     background-color: #F4D8B6;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 3px;
 }
 
-.contact{
-    background-color: #7DA8AE;
+.footer .logo {
+    transform: scale(0.3);
 }
+*/
 
-.footer{
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     background-color: #F4D8B6;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    border: 200%;
+    padding: 1em 0em 1em;
 }
