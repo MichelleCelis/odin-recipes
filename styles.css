@@ -49,6 +49,12 @@ body {
     left: -3em;
 }
 
+.landing .tag {
+    font-family: Arial, sans-serif;
+    color: #5D4A3c;
+    font-size: 150%;
+}
+
 .recipes, .contact {
     background-color: #7DA8AE;
     display: flex;
@@ -130,4 +136,8 @@ body {
     width: 100%;
     border: 200%;
     padding: 1em 0em 1em;
+}
+
+.footer .p {
+    text-align: left;
 }
