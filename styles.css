@@ -136,7 +136,7 @@ body {
   width: 1000px;
   top: 18em;
   left: 26em;
-  z-index: 3;
+  z-index: 1;
 }
 
 .contact .ravIMG {
@@ -145,7 +145,49 @@ body {
   width: 250px;
   top: 10.4em;
   left: 40em;
-  z-index: 2;
+  z-index: 0;
+}
+
+.contactForm {
+  z-index: 3;
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.contactFormTxt {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 26px 0;
+  padding: 20px 40px;
+  outline: none;
+  color: #ddd;
+  border-radius: 20px;
+}
+
+.contactFormTxt:focus {
+  box-shadow: 0 0 10px 4px #34495e;
+}
+
+textarea.contactFormTxt {
+  resize: none;
+  height: 120px;
+}
+
+.contactFormBtn {
+  margin-left: 105px;
+  border: 0;
+  background: #34495e;
+  color: #ddd;
+  padding: 12px 50x;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.contactFormBtn:hover {
+  background: #7DA8AE;
 }
 
 .sub .title {
