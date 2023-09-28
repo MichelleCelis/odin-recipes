@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Skranji&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Skranji&display=swap');
+
+* {
+    padding: 0;
+    margin: 0%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #F4D8B6;
+    width: 100%;
+    height: 10vh;
+    overflow: hidden;
+    line-height: 0px;
+    border: 200%;
+}
+
+.header .logo {
+    position: absolute;
+    height: auto;
+    max-width: 100%;
+    transform: scale(0.09);
+    top: -10em;
+    left: -32em;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: 'Skranji', cursive;
+    color: #fff6ea;
+    width: 100%;
+    letter-spacing: 0.2em;
+    position: relative;
+    text-align: center;
+    font-size: 7vw;
+    top: 0%;
+}
+
+.titleSect {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/mead.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.desc {
+    background-color: #7DA8AE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    border: 200%;
+    padding: 6em 8em 6em;
+    overflow: hidden;
+}
+
+.desc p {
+    color: #F4D8B6;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5vw;
+    text-align: left;
+    font-style: italic;
+}
+
+.recipe {
+    background-color: #F4D8B6;
+    padding: 20px 100px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.steps {
+    display: inline-block;
+    padding-left: 4cap;
+    padding-bottom: 5vh;
+    font-family: 'Skranji', cursive;
+    color: #5D4A3c;
+}
+
+h2 {
+    padding-top: 5vh;
+    font-family: 'Skranji', cursive;
+    color: #5D4A3c;
+}
+
+.recipe li {
+    color: #5D4A3c;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 2vw;
+}
+
+.image {
+    float: right;
+    text-align: center;
+    justify-content: space-between;
+    padding-left: 22vh;
+    padding-top: 22vh;
+}
