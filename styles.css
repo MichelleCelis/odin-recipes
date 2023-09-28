@@ -2,6 +2,7 @@
 
 body {
     margin: 0;
+    display: grid;
 }
 
 .landing, .sub {
@@ -81,6 +82,13 @@ body {
     margin-top: -130px;
 }
 
+.recipes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+    grid-gap: 2rem;
+    justify-content: center;
+}
+
 .sub .title {
     font-family: 'Skranji', cursive;
     letter-spacing:0.5em;
@@ -109,6 +117,57 @@ body {
     white-space: nowrap;
 }
 
+.card {
+  box-shadow: 0px 2px 20px black;
+  border-radius: 0.2rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  background-color: #F4D8B6;
+  cursor: pointer;
+  transition: transform 200ms ease-in;
+}
+
+.card .cardIMG {
+  height: 12rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card .cardTLT {
+  padding: 1rem;
+  color:#5D4A3c;
+  font-family: 'Skranji', cursive;
+}
+
+.card .cardDS {
+   font-family: Arial, Helvetica, sans-serif;
+   color:#5D4A3c;
+   padding: 0 1rem;
+}
+
+.card .cardBtn {
+    padding: 1rem;
+    font-family: Helvetica, cursive;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 1rem;
+    border: 2px solid #588a91;
+    background: #7DA8AE;
+    color: #F4D8B6;
+    border-radius: 0.2rem;
+  }
+
+.card:hover {
+   transform: scale(1.02);
+}
+
+.cardBtn:hover {
+  background: #5d868b;
+  color: #bdd5d8;
+}
+
 /*.footer{
     background-color: #F4D8B6;
     position: fixed;
@@ -124,6 +183,7 @@ body {
     transform: scale(0.3);
 }
 */
+
 
 .footer {
     display: flex;
@@ -141,3 +201,103 @@ body {
 .footer .p {
     text-align: left;
 }
+
+/*.card {
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0px 2px 20px grey;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    transition: transform 200ms ease-in;
+
+    &__image {
+        height: 12rem;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__title {
+        padding: 1rem;
+    }
+
+    &__description {
+        padding: 0 1rem;
+    }
+
+    &__btn {
+        padding: 1rem;
+        font-family: inherit;
+        font-weight: bold;
+        font-size: 1rem;
+        margin: 1rem;
+        border: 2px red;
+        background: transparent;
+        color: red;
+        border-radius: 0.2rem;
+      }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}*/
+
+.card {
+    box-shadow: 0px 2px 20px var(--clr-gray200);
+    border-radius: var(--radius);
+    overflow: hidden; /* to make radius visible */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Put view recipe at the end of the container */
+  }
+  
+  
+  .card img {
+    height: 12rem;
+    width: 100%; /* extend the entire card with*/
+    object-fit: cover;
+    transition: transform 200ms ease-in;
+  }
+  
+  .card-title {
+    padding: 1rem;
+  }
+  
+  .card-description {
+     padding: 0 1rem;
+  }
+  
+  .card-btn {
+     padding: 1rem;
+      font-family: inherit;
+      font-weight: bold;
+      font-size: 1rem;
+      margin: 1rem;
+      border: 2px solid var(--clr-primary);
+      background: transparent;
+      color: var(--clr-primary);
+      border-radius: var(--radius);
+      transition: background 200ms ease-in, color 200ms ease-in;
+  }
+  
+  /* Hover Effects */
+  
+  .card:hover {
+     transform: scale(1.02);
+  }
+  
+  .card-btn:hover {
+    background: var(--clr-primary);
+    color: white;
+  }
+
+  button {
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+  }
