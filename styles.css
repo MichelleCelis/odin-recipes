@@ -35,6 +35,7 @@ body {
     color: #5D4A3c;
     font-size: 4vw;
     top: -18%;
+    animation: fadeIn 0.5s ease-in-out;
 }
 
 .landing .logo {
@@ -44,14 +45,7 @@ body {
     transform: scale(0.18);
     top: -12em;
     left: -2em;
-    animation: fadeIn 1s ease-in-out;
-}
-
-
-.landing .tag {
-    font-family: 'Poppins', sans-serif;
-    color: #5D4A3c;
-    font-size: 150%;
+    animation: fadeIn 0.5s ease-in-out;
 }
 
 .landing .searchBar {
@@ -63,6 +57,7 @@ body {
     border-radius: 60px;
     padding: 10px 20px;
     backdrop-filter: blur(4px) saturate(120%);
+    animation: fadeIn 0.5s ease-in-out;
 }
 
 .searchBar input {
