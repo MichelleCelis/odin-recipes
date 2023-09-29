@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Skranji&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Skranji&display=swap');
+
 
 html, body {
   margin: 0;
@@ -23,6 +25,7 @@ body {
     overflow: hidden;
 }
 
+
 .landing .title{
     font-family: 'Skranji', cursive;
     width: 100%;
@@ -46,7 +49,7 @@ body {
 
 
 .landing .tag {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #5D4A3c;
     font-size: 150%;
 }
@@ -197,9 +200,18 @@ textarea.contactFormTxt {
     transform: translateY(-50%);
     text-align: center;
     color: #5D4A3c;
-    font-size: 2vw;
+    font-size: 1.6vw;
     margin-top: -100px;
     white-space: nowrap;
+}
+
+
+.sub .text {
+  font-family: 'Poppins', sans-serif;
+  color:#5D4A3c;
+  padding: 6em 6em 6em;
+  overflow: auto;
+  z-index: 4;
 }
 
 .sub .shipIMG {
@@ -209,38 +221,7 @@ textarea.contactFormTxt {
   top: 8em;
   left: 35em;
   z-index: 0;
-}
-
-.formBox {
-  padding: 10px;
-  border-radius: 5px;
-  background: #7DA8AE;
-  box-shadow: 10px 10px 15px #ddd, -10px -10x 15px #fff;
-  z-index: 1;
-}
-
-.formBox input {
-  font-size: 18px;
-  color: #000;
-  padding: 20px 70px;
-  border: none;
-  outline: none;
-  background: #9ac3c9;
-
-}
-
-.formBox button {
-  color: #f7e0c5;
-  padding: 15px 20px;
-  font-size: 20px;
-  border: none;
-  border-radius: 5px;
-  background: #4a868d;
-  cursor: pointer;
-}
-
-.formBox button:hover {
-  background: rgb(0, 111, 139);
+  opacity: 0.4;
 }
 
 .contact .title {
@@ -284,8 +265,8 @@ textarea.contactFormTxt {
 }
 
 .card .cardDS {
-   font-family: Arial, Helvetica, sans-serif;
-   font-size: 1vw;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1vw;
    color:#5D4A3c;
    padding: 0 1vw;
    font-style: italic;
@@ -293,7 +274,7 @@ textarea.contactFormTxt {
 
 .card .cardBtn {
     padding: 1vw;
-    font-family: Helvetica, cursive;
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 1vw;
     margin: 1vw;

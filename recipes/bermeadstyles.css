@@ -79,11 +79,13 @@ h1 {
     display: flex;
     justify-content: center;
     flex-direction: row;
+    z-index: 1;
+    overflow: hidden;
 }
 
 .steps {
     display: inline-block;
-    padding-left: 4cap;
+    padding-left: 2vh;
     padding-bottom: 5vh;
     font-family: 'Skranji', cursive;
     color: #5D4A3c;
@@ -102,9 +104,13 @@ h2 {
 }
 
 .image {
-    float: right;
-    text-align: center;
-    justify-content: space-between;
-    padding-left: 22vh;
-    padding-top: 22vh;
+    position: absolute;
+}
+
+.placeholder {
+    position: absolute;
+    transform: scale(0.4);
+    z-index: 0;
+    top: -5em;
+    left: -5em;
 }
