@@ -6,6 +6,7 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
 body {
     margin: 0;
     display: grid;
@@ -327,8 +328,5 @@ textarea.contactFormTxt {
 
 a {
   text-decoration: none;
-}
-
-a:visited {
-  color: #F4D8B6;
+  color:#F4D8B6;
 }
